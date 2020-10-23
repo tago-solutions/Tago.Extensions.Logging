@@ -29,7 +29,7 @@ namespace WebTester
                         builder.AddLogDependencies(opts =>
                         {
                             opts.SetFormatter<JsonLogFormatter>();                            
-                            opts.SetMessageEntryCreatorFactory<LogEnrtyExFactory>();
+                            opts.SetLogEntryFactory<LogEnrtyExFactory>();
 
                         });
                         builder.LogToConsole(cfg =>
